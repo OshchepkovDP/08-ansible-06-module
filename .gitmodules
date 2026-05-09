@@ -1,0 +1,6 @@
+[submodule "ansible"]
+	path = ansible
+	url = https://github.com/OshchepkovDP/ansible.git
+[submodule "my_own_collection"]
+	path = my_own_collection
+	url = https://github.com/OshchepkovDP/my_own_collection.git

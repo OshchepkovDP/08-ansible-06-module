@@ -1,0 +1,14 @@
+---
+- name: Test file_creator from collection
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Create test file
+      my_own_namespace.yandex_cloud_elk.file_creator:
+        path: /tmp/mytestfile.txt
+        content: "Test content from module"
+      register: result
+
+    - name: Show result
+      debug:
+        var: result
